@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 32 - Codelandia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header"> 
+        <div class="container">
+            <span class="header__logo"></span>
+            <h1 class="header__titulo">MINE</h1>
+        </div>       
+        <ul class="header__lista">
+            <li class="header__listItem header__listItem--ativo">Entrar</li>
+            <li class="header__listItem">Forum</li>
+            <li class="header__listItem">Sobre</li>
+            <li class="header__listItem">Mojang</li>
+            <li class="header__listItem">Perguntas</li>
+        </ul>
+    </header>
+
+    <main class="main">
+        <div class="main__logo">
+            <img src="./img/Logo.svg" alt="Logo minecraft">
+        </div>
+        <form action="" method="post" class="main__form">
+            <div>
+                <label class="labelPadrao" for="mail">E-mail</label>
+                <input class="inputMail" type="email" name="mail" id="mail" placeholder="seuemail@dominio.com">
+            </div>
+            <div>
+                <label class="labelPadrao" for="pass">Senha</label>
+                <input type="password" name="pass" id="pass" placeholder="0123456">            
+            </div>
+            <div class="checkboxContainer">
+                <input type="checkbox" name="rememberMe" id="rememberPass">
+                <label for="rememberPass" class="labelCheckbox"> Lembrar minha senha</label>
+            </div>
+            <button class="form__button" type="submit">Entrar na conta</button>
+            <a class="form__link" href="#">Esqueceu a senha?</a>
+        </form>
+    </main>
+
+    <footer>
+        <ul class="footer__lista">
+            <li class="footer__listItem">
+                <img src="./img/Power.svg" alt="">
+                <p>Jogue também offline</p>
+            </li>
+            <li class="footer__listItem">
+                <img src="./img/User.svg" alt="">
+                <p>67 jogadores</p>
+            </li>
+            <li class="footer__listItem">
+                <img src="./img/GameController.svg" alt="">
+                <p>Compatível com uso remoto</p>
+            </li>
+            <li class="footer__listItem">
+                <img src="./img/Vibrate.svg" alt="">
+                <p>Vibração no controle</p>
+            </li>
+            <li class="footer__listItem">
+                <img src="./img/Baby.svg" alt="">
+                <p>Permitido para menores</p>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

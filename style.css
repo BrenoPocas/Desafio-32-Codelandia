@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'inter-medium';
+    src: url(./fonts/Inter-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'kufam-medium';
+    src: url(./fonts/Kufam-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'inter-regular';
+    src: url(./fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'kufam-semibold';
+    src: url(./fonts/Kufam-SemiBold.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+:root{
+    --cor-verde: #33E29A;
+    --cor-cinza: #414141;
+    --cor-dark-200: #262626;
+    --cor-dark: #121212;
+    --cor-white-200: #BAACAC;
+    --cor-white: #FFFFFF;
+}
+
+body{
+    padding: 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing:border-box;
+    background: url(./img/Background.svg);
+    height:100vh;
+    width:100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0px 0px 150px 150px black;
+}
+
+.header{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:var(--cor-white);
+}
+
+.container{
+    display: flex;
+    align-items:center;
+    gap: 15px;
+}
+
+.header__titulo{
+    font-size:32px;
+    font-family: 'Poppins', sans-serif;
+    display:inline-block;
+}
+
+.header__logo{
+    display:inline-block;
+    height:60px;
+    width:34px;
+    background: url(./img/Logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header__lista{
+    margin-top: 50px;
+    display: flex;
+    gap:10px;
+    list-style-type: none;
+}
+
+.header__listItem{
+    text-transform: uppercase;
+    font-family: 'kufam-semibold';
+    font-size:16px;
+    padding:3px 2em;
+    border-radius: 3px;
+}
+
+.header__listItem--ativo{
+    color: var(--cor-verde);
+    background-color: rgba(255,255,255,0.16);
+}
+
+.main{
+    border-radius: 12px;
+    background-color:rgba(38, 38, 38, 0.8);
+    border: 1px solid rgba(115, 115, 115, 0.5);
+    padding: 32px 32px 16px 32px;
+}
+
+.main__logo{
+    text-align:center;
+}
+
+.main__form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.checkboxContainer{
+    padding-top:10px;
+    display:inline-block;
+    width:100%;
+}
+
+input{
+    border: 1px solid var(--cor-cinza);
+    border-radius: 3px;
+    box-sizing:border-box;
+    padding:7px 14px;
+    margin-bottom:15px;
+    background-color: var(--cor-dark-200);
+    color:var(--cor-white-200);
+}
+
+input[type="email"], 
+input[type="password"]{
+    width: 375px;
+}
+
+input::placeholder{
+    color:var(--cor-cinza);
+    color: var(--cor-white-200);
+    font-size:14px;
+    font-family: 'inter-regular', sans-serif;
+    font-weight: 400;
+}
+
+.labelPadrao{
+    font-family: 'Kufam-SemiBold', sans-serif;
+    color: var(--cor-white);
+    display:block;
+    margin: 10px 0 10px 0;
+}
+
+.labelCheckbox{
+    color:var(--cor-white);
+    font-family: 'inter-medium', sans-serif;
+    font-size: 14px;
+}
+
+.form__button{
+    margin:20px 0;
+    display:inline-block;
+    width:100%;
+    padding: 9px;
+    background: linear-gradient(90deg, #22AE75, #00874F);
+    color: var(--cor-white);
+    font-family: 'kufam-semibold';
+    font-size:20px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, 0.05), 0px 2px 0px #FFFFFF, inset 0px 2px 0px rgba(255, 255, 255, 0.4);
+}
+
+.form__button:hover{
+    background: linear-gradient(90deg, #177952, #005834);
+    position:relative;
+    top:1px;
+    left:1px;
+}
+
+.form__link{
+    margin:10px 0;
+    font-family: 'inter-regular', sans-serif;
+    color:var(--cor-verde);
+    text-decoration: none;
+}
+
+.footer__lista{
+    display:flex;
+}
+
+.footer__listItem{
+    margin:0 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color:var(--cor-white);
+    list-style-type: none;
+    font-family: 'kufam-medium', sans-serif;
+}
+
+.footer__listItem p{
+    margin-top:20px;
+}
