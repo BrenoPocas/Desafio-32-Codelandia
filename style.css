@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: 'icones';
+    src: url(./fonts/icones.ttf);
+}
+
+@font-face {
     font-family: 'inter-medium';
     src: url(./fonts/Inter-Medium.ttf);
 }
@@ -100,10 +105,20 @@ body{
 }
 
 .main{
+    width:375px;
     border-radius: 12px;
     background-color:rgba(38, 38, 38, 0.8);
     border: 1px solid rgba(115, 115, 115, 0.5);
     padding: 32px 32px 16px 32px;
+}
+
+.main__form div{
+    width: 100%;
+}
+
+input[type="email"], 
+input[type="password"]{
+    width: 100%;
 }
 
 .main__logo{
@@ -130,11 +145,6 @@ input{
     margin-bottom:15px;
     background-color: var(--cor-dark-200);
     color:var(--cor-white-200);
-}
-
-input[type="email"], 
-input[type="password"]{
-    width: 375px;
 }
 
 input::placeholder{
@@ -201,4 +211,53 @@ input::placeholder{
 
 .footer__listItem p{
     margin-top:20px;
+}
+
+.burgMenu{
+    display:none;
+}
+
+@media screen and (max-width: 425px) {
+    body{
+        box-sizing:border-box;
+        padding:24px;
+        display:flex;
+        height:fit-content;
+        box-shadow: inset 0px 0px 150px 100px black;
+        background-color: #121212;
+        background-attachment: scroll;
+    }
+
+    .header {
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        width:100%;
+    }
+
+    .header__lista{
+        display:none;
+    }
+
+    .main{
+        margin-top: 80px;
+        width:80%;
+    }
+
+    .burgMenu{
+        display:inline-block;
+
+    }
+
+    .burgMenu::before{
+        font-family: 'icones';
+        font-size:32px;
+        content:'\e904';
+    }
+
+    .footer__lista{
+        margin-top:50px;
+        flex-direction:column;
+        gap: 30px;
+    }
 }
